@@ -1,0 +1,119 @@
+name: CD
+
+###################################################
+# Start the job on semantic versioned branch push #
+###################################################
+on:
+  push:
+    branches:
+      - 'v[0-9].[0-9].[0-9]-alpha.[0-9]'
+      - 'v[0-9].[0-9].[0-9]-beta.[0-9]'
+      - 'v[0-9].[0-9].[0-9]'
+
+###################
+# Set Global Envs #
+###################
+env:
+  NODE_VERSION: '12'
+
+############
+# Set Jobs #
+############
+jobs:
+  releases:
+    # Name the Job
+    name: CD
+    # Set the agent to run on
+    runs-on: ubuntu-latest
+
+    ##############
+    # Load Steps #
+    ##############
+    steps:
+      #################
+      # Checkout Code #
+      #################
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      ###############
+      # Get Version #
+      ###############
+      - name: Get Version
+        shell: bash
+        run: |
+          pattern="refs/heads/"
+          ver="${github_ref/$pattern/}"
+          echo $ver
+          echo "new_version=$ver" >> $GITHUB_ENV
+        env:
+          github_ref: ${{ github.ref }}
+
+      #################
+      # Setup Node JS #
+      #################
+      - name: Setup Node JS
+        # Setup .npmrc file to publish to npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: https://npm.pkg.github.com/
+          scope: '@qbcart'
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.QBC_GITHUB_PACKAGES }}
+
+      ################
+      # Install Deps #
+      ################
+      - name: Install Deps
+        shell: bash
+        run: npm install
+
+      #################
+      # Build Package #
+      #################
+      - name: Build Package
+        shell: bash
+        run: npm run build:npm
+
+      #############
+      # Run Tests #
+      #############
+      - name: Run Tests
+        shell: bash
+        run: npm run test:ci
+
+      #################
+      # Prune Package #
+      #################
+      - name: Prune Package
+        shell: bash
+        run: npm prune --production
+
+      ###################
+      # Publish Package #
+      ###################
+      - name: Publish Package
+        shell: bash
+        run: |
+          cd dist
+          npm version $ver
+          echo 'VER:' $ver
+          npm publish
+        env:
+          ver: ${{ env.new_version }}
+
+      #########################
+      # Create GitHub Release #
+      #########################
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ env.new_version }}
+          release_name: ${{ env.new_version }}
+          body_path: ./release.md
+          draft: false
+          prerelease: ${{ contains(env.new_version, 'alpha') || contains(env.new_version, 'beta') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
