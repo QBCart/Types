@@ -1,20 +1,33 @@
 {
-  "name": "QBC.Types",
+  "name": "@qbcart/types",
   "version": "1.0.0",
   "description": "Typescript types common across the QBCart ecosystem.",
+  "keywords": [
+    "qbcart",
+    "types",
+    "typescript"
+  ],
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "module": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/QBCart/QBC.Types.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "QbCart Inc.",
+  "contributors": [
+    "Allan Mobley",
+    "Michael Shea"
+  ],
   "bugs": {
     "url": "https://github.com/QBCart/QBC.Types/issues"
   },
-  "homepage": "https://github.com/QBCart/QBC.Types#readme"
+  "homepage": "https://github.com/QBCart/QBC.Types#readme",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "build:npm": "tsc && cp package.json build && cp README.md build",
+    "format": "prettier --write .",
+    "lint": "prettier --check .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ci": "echo \"All Good\" && exit 0"
+  }
 }
