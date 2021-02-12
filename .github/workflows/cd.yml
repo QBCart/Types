@@ -83,13 +83,6 @@ jobs:
         shell: bash
         run: npm run test:ci
 
-      #################
-      # Prune Package #
-      #################
-      - name: Prune Package
-        shell: bash
-        run: npm prune --production
-
       ###################
       # Publish Package #
       ###################
