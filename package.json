@@ -24,7 +24,7 @@
   "homepage": "https://github.com/QBCart/QBC.Types#readme",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "build:npm": "tsc && cp package.json build && cp README.md build",
+    "build:npm": "tsc && cp package.json dist && cp README.md dist",
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
