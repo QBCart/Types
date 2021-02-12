@@ -29,5 +29,10 @@
     "lint": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:ci": "echo \"All Good\" && exit 0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.5"
   }
 }
