@@ -62,4 +62,9 @@ export default interface ItemListObjectMetadata {
    * METADATA: List of product specs.
    */
   Specs: string[];
+
+  /**
+   * METADATA: The quantity that represents a user's input.
+   */
+  InputQuantity: number;
 }
