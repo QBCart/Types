@@ -2,7 +2,7 @@
 
 # New
 
-- Added item inventory and associated types.
+- Added a few missing props to item inventory.
 
 # Fixes
 
