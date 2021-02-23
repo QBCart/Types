@@ -54,12 +54,12 @@ export default interface ItemListObjectMetadata {
   FullDesc: string;
 
   /**
-   * List of alternative product images for display.
+   * METADATA: List of alternative product images for display.
    */
   Images: string[];
 
   /**
-   * List of product specs.
+   * METADATA: List of product specs.
    */
   Specs: string[];
 }
