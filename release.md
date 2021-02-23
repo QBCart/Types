@@ -2,7 +2,7 @@
 
 # New
 
-- First alpha release.
+- Added item inventory and associated types.
 
 # Fixes
 
