@@ -2,7 +2,7 @@
 
 # New
 
-- Added a few missing props to item inventory.
+- Removed a prop from item inventory.
 
 # Fixes
 
