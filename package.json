@@ -1,7 +1,7 @@
 {
   "name": "@qbcart/types",
   "version": "1.0.0",
-  "description": "Typescript types common across the QBCart javascript ecosystem.",
+  "description": "Types common across the QBCart javascript ecosystem.",
   "author": "QbCart Inc.",
   "contributors": [
     "Allan Mobley",

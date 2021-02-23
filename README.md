@@ -4,6 +4,6 @@
 
 # QBC.Types
 
-Typescript types common across the QBCart javascript ecosystem.
+Types common across the QBCart javascript ecosystem.
 
 ###### Copyright (c) 2020 QBCart Inc. All rights reserved.
