@@ -3,48 +3,63 @@
  */
 export default interface ItemListObjectMetadata {
   /**
-   * Whether the item is a parent to others in QuickBooks.
+   * METADATA: Whether the item is a parent to others in QuickBooks.
    */
   IsCategory: boolean;
 
   /**
-   * Whether the item should be visible in EShop.
+   * METADATA: Whether the item should be visible in EShop.
    */
   IsPublic: boolean;
 
   /**
-   * The FullName represented as relative url.
+   * METADATA: The FullName represented as relative url.
    */
   Href: string;
 
   /**
-   * Price charged to current customer.
+   * METADATA: Price charged to current customer.
    */
   CustomerPrice: number;
 
   /**
-   * Whether the item is tracked by location in QuickBooks.
+   * METADATA: Whether the item is tracked by location in QuickBooks.
    * Typically true for inventory that is countable.
    */
   HasSiteLocation: boolean;
 
   /**
-   * Whether the item represents a set of items.
+   * METADATA: Whether the item represents a set of items.
    */
   IsItemSet: boolean;
 
   /**
-   * Whether the item is part of a set of items.
+   * METADATA: Whether the item is part of a set of items.
    */
   InItemSet: boolean;
 
   /**
-   * Whether the item typically is sold as a case.
+   * METADATA: Whether the item typically is sold as a case.
    */
   IsItemCase: boolean;
 
   /**
-   * The number of items in a case when sold as a case.
+   * METADATA: The number of items in a case when sold as a case.
    */
   ItemCaseCount: number;
+
+  /**
+   * METADATA: A fuller description of product for eshop purposes.
+   */
+  FullDesc: string;
+
+  /**
+   * List of alternative product images for display.
+   */
+  Images: string[];
+
+  /**
+   * List of product specs.
+   */
+  Specs: string[];
 }
