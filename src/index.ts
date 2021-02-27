@@ -11,4 +11,11 @@ import type CosmosBase from './cosmos-base';
 import type ItemListObjectMetadata from './items-list-object-metadata';
 import type Company from './company';
 
-export { User, ItemInventory, Ref, CosmosBase, ItemListObjectMetadata, Company };
+export {
+  User,
+  ItemInventory,
+  Ref,
+  CosmosBase,
+  ItemListObjectMetadata,
+  Company
+};
