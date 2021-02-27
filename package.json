@@ -9,6 +9,7 @@
   ],
   "main": "index.js",
   "module": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/QBCart/Types.git"
@@ -18,7 +19,7 @@
   },
   "homepage": "https://github.com/QBCart/Types#readme",
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "npm run format && rimraf dist && rimraf build && tsc",
     "build:npm": "tsc && cp package.json dist && cp README.md dist",
     "format": "prettier --write .",
     "lint": "prettier --check .",
