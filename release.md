@@ -2,7 +2,7 @@
 
 # New
 
-- Removed a prop from item inventory.
+- Added company type.
 
 # Fixes
 
