@@ -2,11 +2,11 @@
 
 # New
 
-- Added company type.
+- none
 
 # Fixes
 
-- none
+- Fix import ref.
 
 # Breaking
 
