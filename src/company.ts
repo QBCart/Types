@@ -1,4 +1,4 @@
-import type { CosmosBase } from 'src';
+import type CosmosBase from './cosmos-base';
 
 /**
  * A company as described by QuickBooks and QBCart.
