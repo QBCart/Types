@@ -7,5 +7,6 @@
 import type User from './identity/user';
 import type ItemInventory from './line-items/item-inventory';
 import type Company from './info/company';
+import type EShopCart from './customers/eshop-cart';
 
-export { User, ItemInventory, Company };
+export { User, ItemInventory, Company, EShopCart };
