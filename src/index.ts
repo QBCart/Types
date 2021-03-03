@@ -8,8 +8,4 @@ import type User from './identity/user';
 import type ItemInventory from './line-items/item-inventory';
 import type Company from './info/company';
 
-export {
-  User,
-  ItemInventory,
-  Company
-};
+export { User, ItemInventory, Company };
