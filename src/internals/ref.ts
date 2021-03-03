@@ -1,5 +1,5 @@
 /**
- * Describes the ref type in QuickBooks.
+ * Describes a ref type from QuickBooks.
  */
 export default interface Ref {
   /**

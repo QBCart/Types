@@ -3,7 +3,7 @@ import type ItemListObjectMetadata from '../extends/items-list-object-metadata';
 import type Ref from '../internals/ref';
 
 /**
- * An inventory item as described by QuickBooks and QBCart.
+ * Describes an inventory item from QuickBooks.
  */
 export default interface ItemInventory
   extends CosmosBase,

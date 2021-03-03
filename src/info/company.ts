@@ -1,7 +1,7 @@
 import type CosmosBase from '../extends/cosmos-base';
 
 /**
- * A company as described by QuickBooks and QBCart.
+ * Describes info about a QBCart company.
  */
 export default interface Company extends CosmosBase {
   /**

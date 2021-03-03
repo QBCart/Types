@@ -1,6 +1,6 @@
 /**
- * Contains properties common to all objects that QBCart stores in Cosmos Db,
- * and exposes meta-properties that Cosmos DB adds to every stored document.
+ * Describes properties common to all objects that QBCart stores in Cosmos,
+ * and exposes meta-properties that Cosmos adds to every stored document.
  */
 export default interface CosmosBase {
   /**

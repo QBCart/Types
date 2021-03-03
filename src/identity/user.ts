@@ -1,5 +1,5 @@
 /**
- * The user as expressed by Azure AD B2C.
+ * Describes an Azure AD B2C user.
  */
 export default interface User {
   /**
