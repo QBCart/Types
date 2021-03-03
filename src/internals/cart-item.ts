@@ -3,14 +3,14 @@
  */
 export default interface CartItem {
   /**
-   * The unique id used by Cosmos to distinguish an object from others in the same container. 
+   * The unique id used by Cosmos to distinguish an object from others in the same container.
    */
   id: string;
 
   /**
    * The unique id used by QuickBooks to distinguish a list object from other list objects.
    */
-   listId: string;
+  listId: string;
 
   /**
    * The name, aka item code, of an inventory item.
