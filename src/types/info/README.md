@@ -2,8 +2,8 @@
 
 <img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" />
 
-# Types
+# Info Types
 
-Types describing types that can appear as line items on transactions in QuickBooks.
+Types describing data types that produce only one source in Azure Cosmos.
 
 ###### Copyright (c) 2020 QBCart Inc. All rights reserved.
