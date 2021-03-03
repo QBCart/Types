@@ -1,6 +1,6 @@
-import type CosmosBase from './cosmos-base';
-import type ItemListObjectMetadata from './items-list-object-metadata';
-import type Ref from './ref';
+import type CosmosBase from '../extends/cosmos-base';
+import type ItemListObjectMetadata from '../extends/items-list-object-metadata';
+import type Ref from '../internals/ref';
 
 /**
  * An inventory item as described by QuickBooks and QBCart.

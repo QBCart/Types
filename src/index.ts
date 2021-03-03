@@ -4,18 +4,12 @@
  * This code can only be used and/or distributed with express permission.
  */
 
-import type User from './user';
-import type ItemInventory from './item-inventory';
-import type Ref from './ref';
-import type CosmosBase from './cosmos-base';
-import type ItemListObjectMetadata from './items-list-object-metadata';
-import type Company from './company';
+import type User from './identity/user';
+import type ItemInventory from './line-items/item-inventory';
+import type Company from './info/company';
 
 export {
   User,
   ItemInventory,
-  Ref,
-  CosmosBase,
-  ItemListObjectMetadata,
   Company
 };
