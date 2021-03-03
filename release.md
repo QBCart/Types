@@ -2,14 +2,14 @@
 
 # New
 
-- none
+- Added eshop cart type.
 
 # Fixes
 
-- Fix import ref.
+- none
 
 # Breaking
 
-- none
+- Removed non-top-level types from index.
 
 ###### Copyright (c) 2020 QBCart Inc. All rights reserved.
