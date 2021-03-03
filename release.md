@@ -6,7 +6,7 @@
 
 # Fixes
 
-- none
+- Export eshop cart under eshop folder only.
 
 # Breaking
 
