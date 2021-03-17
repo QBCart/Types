@@ -20,9 +20,7 @@
   "scripts": {
     "build": "rimraf dist && tsc",
     "format:check": "prettier --check .",
-    "format:fix": "prettier --write .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:ci": "echo \"All Good\" && exit 0"
+    "format:fix": "prettier --write ."
   },
   "devDependencies": {
     "husky": "^4.3.8",
