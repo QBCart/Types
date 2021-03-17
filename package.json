@@ -18,8 +18,7 @@
   },
   "homepage": "https://github.com/QBCart/Types#readme",
   "scripts": {
-    "build": "npm run format && rimraf dist && rimraf build && tsc",
-    "build:npm": "tsc && cp package.json dist && cp README.md dist",
+    "build": "rimraf dist && tsc",
     "format": "prettier --write .",
     "lint": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1",
