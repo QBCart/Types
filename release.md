@@ -2,14 +2,14 @@
 
 # New
 
-- Added eshop cart type.
+- Added new eshop cart item type.
 
 # Fixes
 
-- Export eshop cart under eshop folder only.
+- none
 
 # Breaking
 
-- Removed non-top-level types from index.
+- none
 
 ###### Copyright (c) 2020 QBCart Inc. All rights reserved.
