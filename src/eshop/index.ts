@@ -6,4 +6,4 @@
 
 import type EShopCart from '../types/customers/eshop-cart';
 
-export { EShopCart };
+export type { EShopCart };
