@@ -2,7 +2,7 @@
 
 # New
 
-- Added new eshop cart item type.
+- Added new eshop customer price item type.
 
 # Fixes
 
