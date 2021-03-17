@@ -7,7 +7,7 @@
     "Allan Mobley",
     "Michael Shea"
   ],
-  "main": "",
+  "main": "index.d.ts",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
