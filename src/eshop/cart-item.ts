@@ -2,7 +2,8 @@ import CosmosBase from '../types/extends/cosmos-base';
 
 /**
  * Describes an item in a customer's cart in EShop.
- * The id specifies the inventory item's id while the Discriminator specifies the customer's id.
+ * The @property {id} specifies the inventory item for which this cart item denotes,
+ * while @property {Discriminator} specifies the value `CART-ITEM-${customerId}`.
  */
 export default interface CartItem extends CosmosBase {
   /**
