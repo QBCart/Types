@@ -2,7 +2,7 @@
 
 # New
 
-- Added new eshop customer price item type.
+- Added new eshop custom price item type.
 
 # Fixes
 
@@ -10,6 +10,6 @@
 
 # Breaking
 
-- none
+- Renamed type.
 
 ###### Copyright (c) 2020 QBCart Inc. All rights reserved.
