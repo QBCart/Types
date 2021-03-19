@@ -1,4 +1,4 @@
-import CosmosBase from '../types/extends/cosmos-base';
+import CosmosBase from '../extends/cosmos-base';
 
 /**
  * Describes an item in a customer's cart in EShop.
@@ -10,4 +10,10 @@ export default interface CartItem extends CosmosBase {
    * The current number of an inventory item requested for purchase.
    */
   quantity: number;
+
+  /**
+   * The sales price for an inventory item, which reflects either current retail
+   * or any custom pricing the customer has.
+   */
+  price: number;
 }
