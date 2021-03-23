@@ -2,7 +2,7 @@
 
 # New
 
-- Updated eshop customer cart item type to include price.
+- Types common across the QBCart javascript ecosystem.
 
 # Fixes
 
