@@ -96,7 +96,7 @@ jobs:
         working-directory: dist
         shell: bash
         run: |
-          npm version $ver
+          npm version $ver --allow-same-version
           echo 'VER:' $ver
           npm publish --access public
         env:
