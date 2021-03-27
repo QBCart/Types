@@ -7,5 +7,6 @@
 import type User from './identity/user';
 import type ItemInventory from './line-items/item-inventory';
 import type Company from './info/company';
+import type AlertMessage from './alerts/alert-message';
 
-export type { User, ItemInventory, Company };
+export type { User, ItemInventory, Company, AlertMessage };
