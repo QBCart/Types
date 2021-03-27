@@ -2,7 +2,7 @@
 
 # New
 
-- Types common across the QBCart javascript ecosystem.
+- Alert message interface.
 
 # Fixes
 
