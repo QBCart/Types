@@ -2,7 +2,7 @@
 
 ### New
 
-- Added duration to AlertMessage interface.
+- Added type to AlertMessage interface.
 
 ### Fixes
 

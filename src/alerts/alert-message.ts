@@ -8,6 +8,12 @@ export default interface AlertMessage {
   id: number;
 
   /**
+   * The type of the alert.
+   * @type { 'toast' | 'modal' }
+   */
+  type: string;
+
+  /**
    * The text displayed in the header of the alert.
    */
   headerText: string;
