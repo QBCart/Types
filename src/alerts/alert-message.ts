@@ -5,7 +5,7 @@ export default interface AlertMessage {
   /**
    * The auto-incremented id tracked by LocalDB.
    */
-  id: number;
+  id?: number;
 
   /**
    * The type of the alert.

@@ -2,11 +2,11 @@
 
 ### New
 
-- Added type to AlertMessage interface.
+- none
 
 ### Fixes
 
-- none
+- Allow for id to not be specified when adding new alerts since it will be auto-incremented by LocalDB.
 
 ### Breaking
 
