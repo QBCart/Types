@@ -46,4 +46,9 @@ export default interface AlertMessage {
    * A valid css color to use on the icon.
    */
   iconColor?: string;
+
+  /**
+   * The duration of the animation, if supported.
+   */
+  duration?: number;
 }
