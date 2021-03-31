@@ -6,10 +6,10 @@
 
 ### Fixes
 
-- Allow for id to not be specified when adding new alerts since it will be auto-incremented by LocalDB.
+- none
 
 ### Breaking
 
-- none
+- Removed type prop from AlertMessage interface.
 
 ###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
