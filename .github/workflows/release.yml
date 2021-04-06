@@ -1,4 +1,4 @@
-name: npm
+name: Release
 
 ###################################################
 # Start the job on semantic versioned branch push #
@@ -14,7 +14,7 @@ on:
 # Set Global Envs #
 ###################
 env:
-  node_version: '12'
+  node_version: '14'
 
 ############
 # Set Jobs #
@@ -23,8 +23,8 @@ jobs:
   ##############
   # Define Job #
   ##############
-  publish-npm-package:
-    name: Publish NPM Package
+  release:
+    name: Release
     runs-on: ubuntu-latest
 
     ##############
@@ -86,14 +86,14 @@ jobs:
         working-directory: .
         shell: bash
         run: |
-          cp package.json dist
-          cp README.md dist
+          cp package.json publish_types
+          cp README.md publish_types
 
-      ###################
-      # Publish Package #
-      ###################
-      - name: Publish Package
-        working-directory: dist
+      ########################
+      # Publish Types To NPM #
+      ########################
+      - name: Publish Types To NPM
+        working-directory: publish_types
         shell: bash
         run: |
           npm version $ver --allow-same-version
@@ -101,3 +101,18 @@ jobs:
           npm publish --access public
         env:
           ver: ${{ env.new_version }}
+
+      #########################
+      # Create GitHub Release #
+      #########################
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ env.new_version }}
+          release_name: ${{ env.new_version }}
+          body_path: RELEASE.md
+          draft: false
+          prerelease: ${{ contains(env.new_version, 'alpha') || contains(env.new_version, 'beta') }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
