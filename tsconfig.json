@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "declarationMap": true,
-    "declarationDir": "dist",
+    "declarationDir": "publish_types",
     "emitDeclarationOnly": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
