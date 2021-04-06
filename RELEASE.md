@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added sortOrder property to CartItem interface to support controlling item order in the cart.
 
 ### Fixes
 
