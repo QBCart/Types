@@ -16,4 +16,9 @@ export default interface CartItem extends CosmosBase {
    * or any custom pricing the customer has.
    */
   price: number;
+
+  /**
+   * A timestamp representing when the item was added to the cart and used to sort it in the cart.
+   */
+  sortOrder: number;
 }
