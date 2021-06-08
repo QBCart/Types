@@ -62,4 +62,21 @@ export default interface ItemListObjectMetadata {
    * METADATA: List of product specs.
    */
   Specs: string[];
+
+  /**
+   * METADATA: The rank out of best sellers in ascending order.
+   */
+  BestSellerRank: number;
+
+  /**
+   * METADATA: A binary value (0 or 1) denoting whether item should be featured.
+   * (NOTE: Boolean cannot be used for client-indexedDB purposes.)
+   */
+  IsFeatured: number;
+
+  /**
+   * METADATA: A binary value (0 or 1) denoting whether item is on sale.
+   * (NOTE: Boolean cannot be used for client-indexedDB purposes.)
+   */
+  IsOnSale: number;
 }
