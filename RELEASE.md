@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added product slider support to ItemInventory interface.
 
 ### Fixes
 
