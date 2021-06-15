@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added InventoryBanner interface.
 
 ### Fixes
 
