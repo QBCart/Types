@@ -5,10 +5,9 @@ import CosmosBase from '../extends/cosmos-base';
  */
 export default interface InventoryBanner extends CosmosBase {
   /**
-   * QuickBooks listId of category to which banner belongs.
-   * (NOTE: For home page, this value will be an empty string.)
+   * Path to which banner belongs
    */
-  listId: string;
+  path: string;
 
   /**
    * Path to banner for desktop views.
