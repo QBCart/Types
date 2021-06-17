@@ -10,6 +10,6 @@
 
 ### Breaking
 
-- none
+- Change property name on InventoryBanner interface.
 
 ###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
