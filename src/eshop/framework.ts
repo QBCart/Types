@@ -201,5 +201,6 @@ export type {
   PageSettings,
   PageSetting,
   AppDrawerActions,
-  AppDrawerAction
+  AppDrawerAction,
+  SliderSettings
 };
