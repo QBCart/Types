@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added EShop framework interfaces.
 
 ### Fixes
 
