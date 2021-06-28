@@ -58,6 +58,11 @@ interface GlobalSettings {
    * The interval between client-sync updates in milliseconds.
    */
   syncInterval?: number;
+
+  /**
+   * Optional company overrides that effect product sliders on home and category pages.
+   */
+  sliderSettings: SliderSettings;
 }
 
 interface PageSettings {
@@ -117,10 +122,77 @@ interface AppDrawerActions {
 }
 
 interface AppDrawerAction {
+  /**
+   * The text to be displayed.
+   */
   text: string;
+
+  /**
+   * The icon to be displayed.
+   */
   icon: string;
+
+  /**
+   * Relative path to page.
+   */
   href: string;
+
+  /**
+   * Whether action represents current page.
+   */
   activated: boolean;
+}
+
+interface SliderSettings {
+  /**
+   * The slider speed in milliseconds.
+   */
+  speed: number;
+
+  /**
+   * Max number of best sellers to display.
+   */
+  maxBestSellers: number;
+
+  /**
+   * Max number of featured items to display.
+   */
+  maxFeaturedItems: number;
+
+  /**
+   * Max number of items on sale to display.
+   */
+  maxItemsOnSale: number;
+
+  /**
+   * The background color of the best seller ribbon.
+   */
+  bestSellersRibbonBGColor: string;
+
+  /**
+   * The text color of the best seller ribbon.
+   */
+  bestSellersRibbonTextColor: string;
+
+  /**
+   * The background color of the featured items ribbon.
+   */
+  featuredItemsRibbonBGColor: string;
+
+  /**
+   * The text color of the featured items ribbon.
+   */
+  featuredItemsTextColor: string;
+
+  /**
+   * The background color of the items on sale ribbon.
+   */
+  itemsOnSaleRibbonBGColor: string;
+
+  /**
+   * The text color of the items on sale ribbon.
+   */
+  itemsOnSaleTextColor: string;
 }
 
 export type {
