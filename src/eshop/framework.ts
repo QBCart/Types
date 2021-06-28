@@ -182,7 +182,7 @@ interface SliderSettings {
   /**
    * The text color of the featured items ribbon.
    */
-  featuredItemsTextColor: string;
+  featuredItemsRibbonTextColor: string;
 
   /**
    * The background color of the items on sale ribbon.
@@ -192,7 +192,7 @@ interface SliderSettings {
   /**
    * The text color of the items on sale ribbon.
    */
-  itemsOnSaleTextColor: string;
+  itemsOnSaleRibbonTextColor: string;
 }
 
 export type {
