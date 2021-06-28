@@ -6,7 +6,7 @@
 
 ### Fixes
 
-- none
+- Added slider settings interface to export.
 
 ### Breaking
 
