@@ -121,8 +121,6 @@ interface AppDrawerAction {
   icon: string;
   href: string;
   activated: boolean;
-  dataToggle: string;
-  dataTarget: string;
 }
 
 export type {
