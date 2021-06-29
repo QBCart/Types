@@ -6,7 +6,7 @@
 
 ### Fixes
 
-- none
+- Remove unused props and camel case another.
 
 ### Breaking
 
