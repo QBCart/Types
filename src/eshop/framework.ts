@@ -38,17 +38,6 @@ interface GlobalSettings {
    * Javascript imports used on every page.
    */
   imports: string[];
-
-  /**
-   * Base url to image storage.
-   */
-  imagesStorageUrl: string;
-
-  /**
-   * Base url to site (mainly needed for b2c page redirects).
-   */
-  siteUrl: string;
-
   /**
    * Name of site displayed in top app bar and other appropriate places.
    */
@@ -101,7 +90,7 @@ interface PageSetting {
   /**
    * The actions that appear in the app drawer for the specified page.
    */
-  AppDrawerActions: AppDrawerActions;
+  appDrawerActions: AppDrawerActions;
 
   /**
    * Whether the specified page is b2c related.
