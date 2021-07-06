@@ -49,6 +49,11 @@ interface GlobalSettings {
   syncInterval?: number;
 
   /**
+   * Object containing timestamps concerning the last forced update in localDB for the specified data types.
+   */
+  lastForcedUpdate: LastForcedUpdate;
+
+  /**
    * Optional company overrides that effect product sliders on home and category pages.
    */
   sliderSettings: SliderSettings;
@@ -182,6 +187,28 @@ interface SliderSettings {
    * The text color of the items on sale ribbon.
    */
   itemsOnSaleRibbonTextColor: string;
+}
+
+interface LastForcedUpdate {
+  /**
+   * Timestamp denoting last time this data was forced updated in localDB.
+   */
+  inventory: number;
+
+  /**
+   * Timestamp denoting last time this data was forced updated in localDB.
+   */
+  banners: number;
+
+  /**
+   * Timestamp denoting last time this data was forced updated in localDB.
+   */
+  userCart: number;
+
+  /**
+   * Timestamp denoting last time this data was forced updated in localDB.
+   */
+  userPricing: number;
 }
 
 export type {
