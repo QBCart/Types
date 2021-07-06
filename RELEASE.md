@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added LastForcedUpdate interface to support tracking timestamps related to when a force update should occur in localDB.
 
 ### Fixes
 
