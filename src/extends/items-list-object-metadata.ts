@@ -79,4 +79,9 @@ export default interface ItemListObjectMetadata {
    * (NOTE: Boolean cannot be used for client-indexedDB purposes.)
    */
   IsOnSale: number;
+
+  /**
+   * METADATA: The on-sale price of an item when IsOnSale is true.
+   */
+  OnSalePrice: number;
 }
