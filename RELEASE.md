@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Updated ItemListObjectMetadata interface.
 
 ### Fixes
 
