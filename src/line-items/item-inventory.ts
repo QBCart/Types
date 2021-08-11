@@ -89,7 +89,7 @@ export default interface ItemInventory
    * might have a parent object with the FullName of GermanCars:Mercedes-Benz.
    * In a request, if a ParentRef aggregate includes both FullName and ListID, FullName will be ignored.
    */
-  ParentRe: Ref;
+  ParentRef: Ref;
 
   /**
    * The number of ancestors.
