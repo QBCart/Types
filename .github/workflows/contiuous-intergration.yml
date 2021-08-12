@@ -1,9 +1,16 @@
 name: CI
 
-####################
-# Start the job on #
-####################
-on: push
+##############################################################
+# Triggers when push changes occur in specified branch paths #
+##############################################################
+on:
+  push:
+    branches-ignore:
+      - main
+      - '!v[0-9]+.[0-9]+.[0-9]+*'
+    paths:
+      - 'src/**'
+      - '.github/workflows/continuos-integration.yml'
 
 ###################
 # Set Global Envs #
