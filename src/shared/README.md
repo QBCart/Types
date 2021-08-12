@@ -1,9 +1,5 @@
-![CI](https://github.com/QBCart/Types/workflows/CI/badge.svg)![CD](https://github.com/QBCart/Types/workflows/CD/badge.svg)
+# <img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" /> Shared Types
 
-<img align="center" src="https://avatars2.githubusercontent.com/u/45455933" width="96" height="96" />
+Types that are typically internal to other types and are not themselves main data types.
 
-# Internal Types
-
-Types describing types that are internal to other types.
-
-###### Copyright (c) 2020 QBCart Inc. All rights reserved.
+###### Licensed under MIT - Copyright (c) 2021 QBCart Inc. All rights reserved.
