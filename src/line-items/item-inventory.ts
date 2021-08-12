@@ -1,13 +1,11 @@
 import type CosmosBase from '../extends/cosmos-base';
-import type ItemListObjectMetadata from '../extends/items-list-object-metadata';
+import type Metadata from './metadata/item-inventory';
 import type Ref from '../shared/ref';
 
 /**
  * Describes an inventory item from QuickBooks.
  */
-export default interface ItemInventory
-  extends CosmosBase,
-    ItemListObjectMetadata {
+export default interface ItemInventory extends CosmosBase, Metadata {
   /**
    * Along with FullName, ListID is a way to identify a list object.
    * When a list object is added to QuickBooks through the SDK or through the QuickBooks user interface,
