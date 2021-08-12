@@ -1,5 +1,5 @@
 import type CosmosBase from '../extends/cosmos-base';
-import type Metadata from './metadata/item-inventory';
+import type Metadata from '../extends/metadata/item-inventory';
 import type Ref from '../shared/ref';
 
 /**
