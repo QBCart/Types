@@ -1,13 +1,13 @@
 import type CosmosBase from '../extends/cosmos-base';
 import type Metadata from './metadata/customer';
-import type Ref from '../internals/ref';
-import type Address from '../internals/address';
-import type AddressBlock from '../internals/address-block';
-import type AdditionalNote from '../internals/additional-note';
-import type CreditCardInfo from '../internals/credit-card-info';
-import type AdditionalContact from '../internals/additional-contact';
-import type Contact from '../internals/contact';
-import type ShipToAddress from '../internals/ship-to-address';
+import type Ref from '../shared/ref';
+import type Address from '../shared/address';
+import type AddressBlock from '../shared/address-block';
+import type AdditionalNote from '../shared/additional-note';
+import type CreditCardInfo from '../shared/credit-card-info';
+import type AdditionalContact from '../shared/additional-contact';
+import type Contact from '../shared/contact';
+import type ShipToAddress from '../shared/ship-to-address';
 
 /**
  * Describes a customer object.

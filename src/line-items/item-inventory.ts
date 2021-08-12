@@ -1,6 +1,6 @@
 import type CosmosBase from '../extends/cosmos-base';
 import type ItemListObjectMetadata from '../extends/items-list-object-metadata';
-import type Ref from '../internals/ref';
+import type Ref from '../shared/ref';
 
 /**
  * Describes an inventory item from QuickBooks.
