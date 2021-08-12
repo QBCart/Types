@@ -1,4 +1,4 @@
-import type CosmosBase from '../extends/cosmos-base';
+import type CosmosBase from '../extended/cosmos-base';
 
 /**
  * Describes info about a QBCart company.

@@ -1,5 +1,5 @@
-import type CosmosBase from '../extends/cosmos-base';
-import type Metadata from '../extends/metadata/customer';
+import type CosmosBase from '../extended/cosmos-base';
+import type Metadata from '../extended/metadata/customer';
 import type Ref from '../shared/ref';
 import type Address from '../shared/address';
 import type AddressBlock from '../shared/address-block';
