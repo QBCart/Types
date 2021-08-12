@@ -73,5 +73,5 @@ export default interface Contact {
   /**
    * No details given by QuickBooks.
    */
-  AdditionalContacts: AdditionalContact[];
+  AdditionalContactRef: AdditionalContact[];
 }

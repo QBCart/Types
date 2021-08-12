@@ -194,7 +194,7 @@ export default interface Customer extends CosmosBase, Metadata {
   /**
    * The ship-to addresses of a customer.
    */
-  ShipToAddresses: ShipToAddress[];
+  ShipToAddress: ShipToAddress[];
 
   /**
    * The telephone number.
@@ -234,12 +234,12 @@ export default interface Customer extends CosmosBase, Metadata {
   /**
    * No details given by QuickBooks.
    */
-  AdditionalContacts: AdditionalContact[];
+  AdditionalContactRef: AdditionalContact[];
 
   /**
    * No details given by QuickBooks.
    */
-  Contacts: Contact[];
+  ContactsRet: Contact[];
 
   /**
    * Customer types allow business owners to categorize customers in ways that are meaningful for their businesses.
@@ -387,7 +387,7 @@ export default interface Customer extends CosmosBase, Metadata {
   /**
    * No details given by QuickBooks.
    */
-  AdditionalNotes: AdditionalNote[];
+  AdditionalNotesRet: AdditionalNote[];
 
   /**
    * No details given by QuickBooks.
