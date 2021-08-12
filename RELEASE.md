@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added customer type and its associated types.
 
 ### Fixes
 
