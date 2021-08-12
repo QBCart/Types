@@ -1,7 +1,7 @@
 /**
- * Describes metadata that QBCart tracks in regards to "Item" list objects from QuickBooks.
+ * Describes metadata that QBCart tracks in regards to "Item Inventory" list objects from QuickBooks.
  */
-export default interface ItemListObjectMetadata {
+export default interface Metadata {
   /**
    * METADATA: Whether the item is a parent to others in QuickBooks.
    */

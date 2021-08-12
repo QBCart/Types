@@ -1,4 +1,4 @@
-import CosmosBase from '../extends/cosmos-base';
+import CosmosBase from '../extended/cosmos-base';
 
 /**
  * Describes the framework in EShop.

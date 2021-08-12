@@ -1,4 +1,4 @@
-import CosmosBase from '../extends/cosmos-base';
+import CosmosBase from '../extended/cosmos-base';
 
 /**
  * Describes an item in a customer's cart in EShop.

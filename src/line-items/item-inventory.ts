@@ -1,13 +1,11 @@
-import type CosmosBase from '../extends/cosmos-base';
-import type ItemListObjectMetadata from '../extends/items-list-object-metadata';
-import type Ref from '../internals/ref';
+import type CosmosBase from '../extended/cosmos-base';
+import type Metadata from '../extended/metadata/item-inventory';
+import type Ref from '../shared/ref';
 
 /**
  * Describes an inventory item from QuickBooks.
  */
-export default interface ItemInventory
-  extends CosmosBase,
-    ItemListObjectMetadata {
+export default interface ItemInventory extends CosmosBase, Metadata {
   /**
    * Along with FullName, ListID is a way to identify a list object.
    * When a list object is added to QuickBooks through the SDK or through the QuickBooks user interface,
@@ -89,7 +87,7 @@ export default interface ItemInventory
    * might have a parent object with the FullName of GermanCars:Mercedes-Benz.
    * In a request, if a ParentRef aggregate includes both FullName and ListID, FullName will be ignored.
    */
-  ParentRe: Ref;
+  ParentRef: Ref;
 
   /**
    * The number of ancestors.
