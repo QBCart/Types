@@ -6,10 +6,18 @@
  * LICENSE file in the root directory of this source repo.
  */
 
+import type ApplicationUser from './identity/application-user';
 import type User from './identity/user';
 import type ItemInventory from './line-items/item-inventory';
 import type Customer from './customers/customer';
 import type Company from './info/company';
 import type AlertMessage from './alerts/alert-message';
 
-export type { User, ItemInventory, Customer, Company, AlertMessage };
+export type {
+  ApplicationUser,
+  User,
+  ItemInventory,
+  Customer,
+  Company,
+  AlertMessage
+};
