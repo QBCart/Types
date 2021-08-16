@@ -2,7 +2,7 @@
 
 ### New
 
-- none
+- Added application user interface.
 
 ### Fixes
 
